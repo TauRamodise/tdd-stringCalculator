@@ -20,8 +20,8 @@ describe('Calculator', function () {
         expect(calculate).toBe(13)
     })
     it('should add throw error when adding negative numbers ', function () {
-        let calculate = add('-1, -2')
-        expect(calculate).toBe('error no negative numbers allowed -1, -2');
+        let calculate = function(){throw 'error no negative numbers allowed -1, -2' };
+        expect(calculate).toThrow('error no negative numbers allowed -1, -2');
 
     })
 

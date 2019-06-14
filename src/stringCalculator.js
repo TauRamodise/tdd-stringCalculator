@@ -22,7 +22,7 @@ function add(str) {
     let sum = parseInt(split[i]);
 
     if (sum < 0) {
-      return 'error no negative numbers allowed ' + '' + str;
+      throw 'error no negative numbers allowed ' + '' + str;
     }
     result += sum;
   }
