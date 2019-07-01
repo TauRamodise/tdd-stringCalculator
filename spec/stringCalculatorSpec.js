@@ -1,4 +1,4 @@
-describe('Calculator', function () {
+describe('add()', function () {
     it('should take and empty string and return 0', function () {
         let calculate = add(' ')
         expect(calculate).toBe(0)
@@ -20,11 +20,11 @@ describe('Calculator', function () {
         expect(calculate).toBe(13)
     })
     it('should add throw error when adding negative numbers ', function () {
-        let calculate = function(){throw 'error no negative numbers allowed -1, -2' };
+        let calculate = function () {
+            throw 'error no negative numbers allowed -1, -2'
+        };
         expect(calculate).toThrow('error no negative numbers allowed -1, -2');
-
     })
-
     it('should accept an expression with a delimiter and add the string', function () {
         let calculate = add('//;\n1;2');
         expect(calculate).toBe(3);

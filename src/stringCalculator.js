@@ -1,10 +1,11 @@
-/* CODE EXPLANATION
+/* 
+
+CODE EXPLANATION
 replace - replaces delimiter characters in string with an empty string 
 split - splits each character in the string to its own string 
 parseInt - converts a string to a number
 
 */
-
 
 function add(str) {
   let result = 0;
@@ -13,9 +14,7 @@ function add(str) {
   let split = replace.split(/[//;\n,]/);
 
   if (str === " ") {
-
-    return 0
-    
+    return 0;
   }
   for (let i = 0; i < split.length; i++) {
 
@@ -28,4 +27,3 @@ function add(str) {
   }
   return result;
 }
-
