@@ -29,4 +29,12 @@ describe('add()', function () {
         let calculate = add('//;\n1;2');
         expect(calculate).toBe(3);
     })
+    it('should accept an expression with a delimiter that can be any length and add the string', function () {
+        let calculate = add('//[***]\n1***2***5');
+        expect(calculate).toBe(8);
+    })
+    it('should accept an expression with multiple delimiters and add the string', function () {
+        let calculate = add('//[*][%]\n1*2%3');
+        expect(calculate).toBe(6);
+    })
 })
