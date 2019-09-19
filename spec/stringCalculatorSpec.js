@@ -21,9 +21,9 @@ describe('add()', function () {
     })
     it('should add throw error when adding negative numbers ', function () {
         let calculate = function () {
-            throw 'error no negative numbers allowed -1, -2'
+            throw 'error no negative numbers allowed -5, -5'
         };
-        expect(calculate).toThrow('error no negative numbers allowed -1, -2');
+        expect(calculate).toThrow('error no negative numbers allowed -5, -5');
     })
     it('should accept an expression with a delimiter and add the string', function () {
         let calculate = add('//;\n1;2');
