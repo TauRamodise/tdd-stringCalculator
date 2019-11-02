@@ -7,7 +7,13 @@ parseInt - converts a string to a number
 
 */
 
-function add(str) {
+module.exports = function add(str) {
+
+  if(str == null) return ' ';
+
+  if (str === " ") return 0;
+  
+
   let result = 0;
   let replace = str.replace(/^(\/\/.*\n)/, '');
   let split = replace.split(/[*@#%!\n\s:&,;.?><]+/g);
@@ -17,9 +23,7 @@ function add(str) {
     if(num < 0) return num
   });
 
-  if (str === " ") {
-    return 0;
-  }
+ 
   for (let i = 0; i < split.length; i++) {
 
     let sum = parseInt(split[i]);
@@ -29,12 +33,10 @@ function add(str) {
       throw 'error no negative numbers allowed ' + checkLength;
     } else 
     if(sum >= 1000){
-      sum == 0
+      sum = 0
     } else {
       result += sum;
     }
   }
-  return result;
+  return result
 }
-
-

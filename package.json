@@ -1,0 +1,19 @@
+{
+  "name": "tdd-string-calc",
+  "version": "1.0.0",
+  "description": "String calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine spec/stringCalculatorSpec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TauRamodise/tdd-stringCalculator.git"
+  },
+  "author": "Dimpho Ramodise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TauRamodise/tdd-stringCalculator/issues"
+  },
+  "homepage": "https://github.com/TauRamodise/tdd-stringCalculator#readme"
+}
